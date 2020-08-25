@@ -25,7 +25,7 @@
   },
   "scripts": {
     "test": "xo && nyc ava",
-    "prepublishOnly": "rm -rf dist && yarn run build",
+    "prepare": "rm -rf dist && yarn run build",
     "dev": "start-storybook -p 9009",
     "build": "tsc",
     "build-storybook": "build-storybook -s .storybook/static -o .out",
